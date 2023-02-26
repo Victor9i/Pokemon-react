@@ -1,13 +1,16 @@
 import{Pokemon} from '../../componentes/Pokemon'
 import 'animate.css';
-const Home = () => {
+ 
+import PokemonLogo from '../../assets/imagens/pokemon.png'
+import './style.css'
+
+
+export const Home = () => {
   return (
-    <div>
-      
-      
-      <h1 class="animate__animated animate__bounce">Meu site de pokemon</h1>
+    <div className='container'>
+        <img className='imageLogo' src={PokemonLogo} alt="Pokemon Logo" />
          <Pokemon name="pikachu" tipo="Raio" />
-         <Pokemon name="Charizad" tipo ="terra"/>
+          <Pokemon name="Charizad" tipo ="terra"/>
          <Pokemon name=" Squirtiz" tipo ="vento"/>
          <Pokemon name=" Dito" tipo ="fogo"/>
    
